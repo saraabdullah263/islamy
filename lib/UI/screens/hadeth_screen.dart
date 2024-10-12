@@ -19,7 +19,8 @@ class HadethScreen extends StatelessWidget {
             leading: IconButton(
               icon: Icon(
                 Icons.arrow_back,
-                color: Colors.black,
+                color: Theme.of(context).colorScheme.brightness==Brightness.light
+                ?Colors.black:Colors.white,
               ),
               onPressed: () {
                 Navigator.of(context).pop();
