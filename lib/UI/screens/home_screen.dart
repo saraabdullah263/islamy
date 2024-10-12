@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AppImage.bglightimage), fit: BoxFit.cover)),
+              image: AssetImage(Theme.of(context).colorScheme.brightness==Brightness.light? AppImage.bglightimage:AppImage.bgdarkimage), fit: BoxFit.cover)),
       child: Scaffold(
         appBar: AppBar(
           title: Text('Islamy'),

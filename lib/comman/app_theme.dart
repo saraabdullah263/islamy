@@ -51,11 +51,11 @@ class AppTheme {
           onSurface: Colors.white70),
       textTheme: TextTheme(
         titleSmall:TextStyle(
-              color: AppColors.maindarkColor,
+              color: AppColors.selecteddarkColor,
               fontSize: 20,
               fontWeight: FontWeight.w400) ,
           titleMedium: TextStyle(
-              color: AppColors.maindarkColor,
+              color: AppColors.selecteddarkColor,
               fontSize: 25,
               fontWeight: FontWeight.w400)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -70,6 +70,6 @@ class AppTheme {
           color: Colors.transparent,
           centerTitle: true,
           elevation: 0),
-      primaryColor: AppColors.maindarkColor,
+      primaryColor: AppColors.selecteddarkColor,
       scaffoldBackgroundColor: Colors.transparent);
 }

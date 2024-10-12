@@ -1,23 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:islamy_app/UI/tabs/guran_tab.dart';
+import 'package:islamy_app/UI/tabs/hadeath_tab.dart';
 import 'package:islamy_app/comman/app_image.dart';
 
-class QuranScreen extends StatefulWidget {
-  static const String routeName = 'quranscreen';
-  const QuranScreen({super.key});
+class HadethScreen extends StatelessWidget {
+  static const String routeName = 'HadethScreen';
+  const HadethScreen({super.key});
 
-  @override
-  State<QuranScreen> createState() => _QuranScreenState();
-}
-
-class _QuranScreenState extends State<QuranScreen> {
-  List<String> vircies = [];
   @override
   Widget build(BuildContext context) {
-    QuranModle quranModle =
-        ModalRoute.of(context)!.settings.arguments as QuranModle;
-       if(vircies.isEmpty) LoadSuraContant(quranModle.index);
+    HadethModle hadethModle =
+        ModalRoute.of(context)!.settings.arguments as HadethModle;
     return Container(
         decoration: BoxDecoration(
             image: DecorationImage(
@@ -27,8 +19,7 @@ class _QuranScreenState extends State<QuranScreen> {
             leading: IconButton(
               icon: Icon(
                 Icons.arrow_back,
-                color: Theme.of(context).colorScheme.brightness==Brightness.light
-                ?Colors.black:Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -50,30 +41,30 @@ class _QuranScreenState extends State<QuranScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  quranModle.name,
+                  hadethModle.name,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Divider(
                     height: 2,
                     indent: MediaQuery.of(context).size.width * .09,
                     endIndent: MediaQuery.of(context).size.width * .09),
-                    SizedBox(height: 5,),
-                vircies.isEmpty ? Expanded(child: Center(child: CircularProgressIndicator()))
-                : Expanded(
-                    child: ListView.builder(
-                  itemBuilder: (context, index) => Text(vircies[index],style: Theme.of(context).textTheme.titleSmall,textDirection: TextDirection.rtl,textAlign: TextAlign.center,),
-                  itemCount: vircies.length,
-                ))
+                SizedBox(
+                  height: 5,
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Text(hadethModle.content,
+                        style: Theme.of(context).textTheme.titleSmall,
+                        textDirection: TextDirection.rtl,
+                        ),
+                  ),
+                ),
               ],
             ),
           ),
         ));
-  }
-
- Future<void> LoadSuraContant(int index) async {
-    String data = await rootBundle.loadString('assets/quran/${index+1 }.txt');
-    vircies = data.trim().split('\n');
-    setState(() {});
   }
 }

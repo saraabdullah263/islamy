@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islamy_app/UI/screens/hadeth_screen.dart';
 import 'package:islamy_app/UI/screens/home_screen.dart';
 import 'package:islamy_app/UI/screens/quran_screen.dart';
 import 'package:islamy_app/comman/app_theme.dart';
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: AppTheme.ligthTheme,
+      theme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
       routes: {
         HomeScreen.routeName: (_) => HomeScreen(),
         QuranScreen.routeName: (_) => QuranScreen(),
+         HadethScreen.routeName: (_) => HadethScreen(),
       },
       initialRoute: HomeScreen.routeName,
     );

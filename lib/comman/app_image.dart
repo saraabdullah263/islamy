@@ -8,4 +8,6 @@ class AppImage{
   static String radioIcon ='assets/images/icon_radio.png';
 static String bgdarkimage='assets/images/dark_bg.png';
   static String quranscreenlogo='assets/images/qur2an_screen_logo.png';
+  static String hadethscreenlogo='assets/images/hadeth_logo.png';
+  
 }
