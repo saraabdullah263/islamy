@@ -150,7 +150,7 @@ class GuranTab extends StatelessWidget {
                     trailing: Container(
                       child: InkWell(
                         onTap: (){
-                          Navigator.of(context).pushNamed(QuranScreen.routeName,arguments: suraName[index]);
+                          Navigator.of(context).pushNamed(QuranScreen.routeName,arguments: QuranModle(index: index, name: suraName[index]));
                         },
                           child: Icon(
                         Icons.play_arrow,
@@ -167,4 +167,12 @@ class GuranTab extends StatelessWidget {
       ],
     );
   }
+}
+class QuranModle{
+  String name;
+  int index;
+  QuranModle({
+    required this.index,
+    required this.name
+});
 }
