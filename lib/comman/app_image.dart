@@ -13,4 +13,5 @@ class AppImage{
   static String bodysebhalogodark='assets/images/body_sebha_dark.png';
   static String headsebhadark='assets/images/head_sebha_dark.png';
   static String headsebhalight='assets/images/head_sebha_logo.png';
+  static String radioImage='assets/images/radio_image.png';
 }

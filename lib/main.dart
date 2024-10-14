@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: AppTheme.darkTheme,
+      theme: AppTheme.ligthTheme,
       themeMode: ThemeMode.system,
       routes: {
         HomeScreen.routeName: (_) => HomeScreen(),
