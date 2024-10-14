@@ -6,8 +6,11 @@ class AppImage{
   static String sebhaIcon='assets/images/icon_sebha.png';
   static String bglightimage='assets/images/bg.png';
   static String radioIcon ='assets/images/icon_radio.png';
-static String bgdarkimage='assets/images/dark_bg.png';
+  static String bgdarkimage='assets/images/dark_bg.png';
   static String quranscreenlogo='assets/images/qur2an_screen_logo.png';
   static String hadethscreenlogo='assets/images/hadeth_logo.png';
-  
+  static String bodysebhalogoLight='assets/images/body_sebha_logo.png';
+  static String bodysebhalogodark='assets/images/body_sebha_dark.png';
+  static String headsebhadark='assets/images/head_sebha_dark.png';
+  static String headsebhalight='assets/images/head_sebha_logo.png';
 }

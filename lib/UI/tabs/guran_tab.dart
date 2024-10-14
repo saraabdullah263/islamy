@@ -158,7 +158,7 @@ class _GuranTabState extends State<GuranTab> {
                     ),
                     subtitle: Text(
                       verciscount.isNotEmpty ? verciscount[index].toString(): '',
-                      style: TextStyle(color: AppColors.mainlightColor),
+                      style: TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     trailing: Container(
                       child: InkWell(

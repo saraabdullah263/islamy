@@ -8,7 +8,7 @@ class AppTheme {
           brightness: Brightness.light,
           primary: AppColors.mainlightColor,
           onPrimary: Colors.white70,
-          secondary: Colors.white70,
+          secondary: AppColors.mainlightColor,
           onSecondary: Colors.white70,
           error: Colors.red,
           onError: Colors.white70,
@@ -19,10 +19,20 @@ class AppTheme {
               color: AppColors.mainlightColor,
               fontSize: 20,
               fontWeight: FontWeight.w400) ,
+              headlineSmall: TextStyle(
+                color:Colors.black,
+                fontSize: 25,
+                fontWeight: FontWeight.w400
+              ),
           titleMedium: TextStyle(
               color: AppColors.mainlightColor,
               fontSize: 25,
-              fontWeight: FontWeight.w400)),
+              fontWeight: FontWeight.w400),
+               titleLarge: TextStyle(
+              color: Colors.white,
+              fontSize: 25,
+              fontWeight: FontWeight.w400),
+              ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         type: BottomNavigationBarType.fixed,
         backgroundColor: AppColors.mainlightColor,
@@ -43,7 +53,7 @@ class AppTheme {
           brightness: Brightness.dark,
           primary: AppColors.maindarkColor,
           onPrimary: AppColors.maindarkColor,
-          secondary: Colors.white70,
+          secondary: AppColors.selecteddarkColor,
           onSecondary: Colors.white70,
           error: Colors.white70,
           onError: Colors.white70,
@@ -54,8 +64,17 @@ class AppTheme {
               color: AppColors.selecteddarkColor,
               fontSize: 20,
               fontWeight: FontWeight.w400) ,
+              headlineSmall: TextStyle(
+                color:Colors.white,
+                fontSize: 25,
+                fontWeight: FontWeight.w400
+              ),
           titleMedium: TextStyle(
               color: AppColors.selecteddarkColor,
+              fontSize: 25,
+              fontWeight: FontWeight.w400),
+              titleLarge: TextStyle(
+              color: Colors.black,
               fontSize: 25,
               fontWeight: FontWeight.w400)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
