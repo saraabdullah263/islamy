@@ -17,7 +17,7 @@ flutter_native_splash:
   color: "#ffffff"
   image: assets/images/3x/logo2@3x.png
   color_dark: "#141A2E"
-  image_dark: assets/images/3x/logo (2)@3x.png
+  image_dark: assets/images/3x/logodark3x.png
   #background_image: "assets/background.png"
 
   # Optional parameters are listed below.  To enable a parameter, uncomment the line by removing
@@ -56,7 +56,7 @@ flutter_native_splash:
     image: assets/images/splashicon.png
     color: "#ffffff"
     color_dark: "#141A2E"
-    image_dark: assets/images/logo (1).png
+    image_dark: assets/images/splashicondark.png
     # The image parameter sets the splash screen icon image.  If this parameter is not specified,
     # the app's launcher icon will be used instead.
     # Please note that the splash screen will be clipped to a circle on the center of the screen.
